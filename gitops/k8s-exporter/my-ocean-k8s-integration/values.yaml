@@ -1,0 +1,11 @@
+stateKey: my-cluster
+eventListener:
+  type: POLLING
+extraEnv:
+  - name: CLUSTER_NAME
+    value: my-cluster
+portBaseUrl: https://api.getport.io
+secret:
+  secrets:
+    portClientId: changeme
+    portClientSecret: changeme

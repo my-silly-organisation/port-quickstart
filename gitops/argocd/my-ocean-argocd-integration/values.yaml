@@ -1,0 +1,11 @@
+initializePortResources: true
+scheduledResyncInterval: 120
+integration:
+  identifier: my-ocean-argocd-integration
+  type: argocd
+  eventListener:
+    type: POLLING
+  config:
+    serverUrl: changeme
+  secrets:
+    token: changeme
