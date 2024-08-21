@@ -1,0 +1,10 @@
+name: port-k8s-argocd
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+description: A minimal DigitalOcean TypeScript Pulumi program
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: digitalocean-typescript

@@ -1,0 +1,7 @@
+config:
+  port-k8s-argocd:clientId:
+    secure: AAABAPtElMKlg7YA7aJeCq4JbJP8hpbqKOgNjAyjZRovD0XhOWfGaXmC4k9OAoDnmYdsL3iOXPVzqdwrHxpcWw==
+  port-k8s-argocd:clientSecret:
+    secure: AAABABrRRVVMDW1EQE4fXhqiWAvIHRVkN948DONSuqOcasadpO8jEbTLbIp/FauqLMXZ/2cG3R4dcNCSdLq0QAoPaaULGGwCk3e5QpqmxSMSCLilQE6M+Wh/W8JURKBQ
+  port-k8s-argocd:token:
+    secure: AAABACGzcPoTqDifBL1LD0OWrlbZ7nlnvCdat7pzLSmQzDN865/uCb7nDhkK8YDJeg8n14eMh7Jd1sfrjt2b+eXXzRmoFFn0ZZNiBBeAIGMpQlhPp7wIoE7mLc073pXATpkGADalSgWj3+OAfNJZGOekGhg2MOaPmxpHWUBAZm+z4PJ6ZXf0FFuW0S54bzDe7f1ZXdd72oPVLpdxKtc4JSyMeJEbkfBwX6zYaHXGV9opWp9ouUOzZOgTWtBJQqhnNXEarRnjpwEj4rl9qgKMVNJ/2pvhdRIG79qADNyXlx89lhUIXycyN4kN+NB24694oYPZmfCXhiVYTznfjh8jksDWSD7V1GtXJgez
