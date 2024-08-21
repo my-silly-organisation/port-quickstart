@@ -1,0 +1,37 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd
+  namespace: argocd
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: default
+  sources:
+  - repoURL: 'https://argoproj.github.io/argo-helm'
+    targetRevision: 7.4.4
+    chart: argo-cd
+    helm:
+      valuesObject:
+        configs:
+          params:
+            "server.insecure": true
+          cm:
+            "accounts.port": apiKey
+          rbac:
+            policy.csv: |
+              p, port, applications, *, */*, allow
+              p, port, clusters, get, *, allow
+        server:
+          ingress:
+            enabled: true
+            ingressClassName: nginx
+            hostname: argocd.209.38.48.229.nip.io
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - ServerSideApply=true
+
