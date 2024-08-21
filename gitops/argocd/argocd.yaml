@@ -21,8 +21,13 @@ spec:
             "accounts.port": apiKey
           rbac:
             policy.csv: |
-              p, port, applications, *, */*, allow
-              p, port, clusters, get, *, allow
+              p, role:read-only-role, applications, *, */*, allow
+              p, role:read-only-role, clusters, get, *, allow
+              p, role:read-only-role, repositories, get, *, allow
+              p, role:read-only-role, projects, get, *, allow
+              p, role:read-only-role, logs, get, *, allow
+              
+              g, port, role:read-only-role
         server:
           ingress:
             enabled: true
